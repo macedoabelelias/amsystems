@@ -68,9 +68,9 @@ if(@$consultas == 'ocultar'){
 <div class="modal fade" id="modalDados" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-xl" role="document" style="width:85%">
 		<div class="modal-content ">
-			<div class="modal-header ">
+			<div class="modal-header bg-primary text-white">
 				<h4 class="modal-title" id="exampleModalLabel"><span id="nome_dados"></span>
-					<span style="margin-left: 25px; font-size: 15px"><a title="PDF da Ficha Paciente" href="" onclick="ficha()"><i class="fa fa-file-pdf-o text-danger"></i> Imprimir Ficha</a></span>
+					<span style="margin-left: 825px; font-size: 15px"><a title="PDF da Ficha Paciente" href="" onclick="ficha()"><i class="fa fa-file-pdf-o text-danger"></i> Imprimir Ficha</a></span>
 				</h4>
 				<button id="btn-fechar" aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"><span
 						class="text-white" aria-hidden="true">&times;</span></button>
@@ -88,7 +88,7 @@ if(@$consultas == 'ocultar'){
 						</div>
 						<div style="margin-bottom: 5px; border-bottom:1px solid #cecece; padding-bottom:3px">			
 							<span style="margin-right: 20px"><b>Tipo Sanguíneo</b> <span id="tipo_dados"></span></span>			
-						<span style="margin-right: 20px"><b>Sexo</b> <span id="sexo_dados"></span></span>
+						<span style="margin-right: 20px"><b>Gênero</b> <span id="sexo_dados"></span></span>
 						<span style=""><b>Convênio</b> <span id="convenio_dados"></span></span>
 						</div>
 						<div style="margin-bottom: 5px; border-bottom:1px solid #cecece; padding-bottom:3px">			
@@ -218,7 +218,7 @@ if(@$consultas == 'ocultar'){
 
 
 
-<!-- Modal RaioX -->
+<!-- Modal Exames -->
 <div class="modal fade" id="modalExames" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
@@ -255,8 +255,8 @@ if(@$consultas == 'ocultar'){
 
 				<div class="row">
 					<div class="col-md-10">	
-								<label>Descrição para o Pedido Raio X</label>
-								<input type="text" id="descricao_raiox" name="descricao_raiox" class="form-control" placeholder="Texto do pedido de raio X">			
+								<label>Descrição do Exame</label>
+								<input type="text" id="descricao_raiox" name="descricao_raiox" class="form-control" placeholder="Solicitação de Exames, Raio X, etc">			
 							</div>						
 				
 				
@@ -435,10 +435,62 @@ if(@$consultas == 'ocultar'){
 						<div class="col-md-2 mb-2 col-6">
 							<label>Ação</label>
 							<select name="acao" id="acao" class="form-select">								
-								<option value="carie">Cárie, Canal, outros...</option>
+								<option value="ausentes">Ausente</option>
+								<option value="atf">ATF</option>
+								<option value="atf_trat">ATF - Tratado</option>
+								<option value="consulta">Consulta Inicial</option>								
+								<option value="cla1">Classe I</option>
+								<option value="cla1_trat">Classe I - Tratado</option>
+								<option value="cla2DO">Classe II DO</option>
+								<option value="cla2DO_trat">Classe II DO - Tratado</option>
+								<option value="cla2MO">Classe II MO</option>
+								<option value="cla2MO_trat">Classe II MO - Tratado</option>
+								<option value="cla2MOD">Classe II MOD</option>
+								<option value="cla2MOD_trat">Classe II MOD - Tratado</option>
+								<option value="cla3D">Classe III D</option>
+								<option value="cla3D_trat">Classe III D - Tratado</option>
+								<option value="cla3M">Classe III M</option>
+								<option value="cla3M_trat">Classe III M - Tratado</option>
+								<option value="cla3MD">Classe III MD</option>
+								<option value="cla3MD_trat">Classe III MD - Tratado</option>
+								<option value="cla4">Classe IV</option>
+								<option value="cla4_trat">Classe IV - Tratado</option>
+								<option value="cla5">Classe V</option>
+								<option value="cla5_trat">Classe V - Tratado</option>
+								<option value="implantes">Implante Cirurgia</option>
+								<option value="emergencia">Emergência</option>
+								<option value="escovacao">Técnica Escovação</option>
+								<option value="canal">Endodontia</option>
+								<option value="canal_trat">Endodontia - Tratado</option>
+								<option value="faceta">Faceta</option>
+								<option value="faceta_trat">Faceta - Tratado</option>
+								<option value="nucleo">Núcleo Preenchimento</option>
+								<option value="nucleo_trat">Núcleo - Tratado</option>
+								<option value="orto">Ortodontia</option>
+								<option value="orto_prev">Ortodontia Preventiva</option>
+								<option value="orto_prev_trat">Ortodontia Prev. Tratado</option>
+								<option value="protese">Coroa/Jaqueta/Bloco</option>
+								<option value="protese_trat">Coroa, Jaqueta, Bloco - Tratado</option>
+								<option value="pf(3 elem)">Prótese Fixa (3 elementos)</option>
+								<option value="pf(3 elem)_trat">PF (3 elementos) Tratado</option>
+								<option value="pt">Prótese Total</option>
+								<option value="pt_trat">PT Entregue</option>
+								<option value="protocolo">Protocolo</option>
+								<option value="protocolo_trat">Protocolo - Entregue</option>
+								<option value="profilaxia">Profilaxia</option>
+								<option value="profilaxia_trat">Profilaxia Realizado</option>
+								<option value="coroa_s_imp">Coroa s/implante</option>								
+								<option value="coroa_s_imp_trat">Coroa s/implante Realizado</option>
+								<option value="raspagem">Raspagem e Polimento</option>
+								<option value="raspagem_trat">Raspagem Tratado</option>
+								<option value="selante">Selante Oclusal</option>
+								<!-- <option value="selante_trat">Selante Oclusal Tratado</option> -->
+								<option value="raiz_res">Raís Residual</option>
+								<option value="rx">Radiologia</option>
+								<option value="incluso">Incluso</option>
 								<option value="extraidos">Extraído</option>
-								<option value="extrair">Para Extrair</option>
-								<option value="tratados">Tratado / Finalizado</option>
+								<option value="extrair">Extração Indicada</option>
+
 							</select>
 						</div>
 
@@ -510,11 +562,11 @@ if(@$consultas == 'ocultar'){
 <div class="modal fade" id="modalRelatorio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
-			<div class="modal-header">
+			<div class="modal-header bg-primary text-white">
 				<h4 class="modal-title" id="exampleModalLabel"><span id="nome_relatorio"></span>		
-
+					
 				</h4>
-				<button id="btn-fechar-relatorio" type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -25px">
+				<button id="btn-fechar-relatorio" aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
 					<span aria-hidden="true">&times;</span>
 				</button>
 
@@ -531,7 +583,7 @@ if(@$consultas == 'ocultar'){
 
 				<div class="row">
                     <div class="col-md-12 mb-2" style="font-weight: normal !important">
-                        <label>Descrição do Relatório Médico</label>
+                        <label>Descrição do Relatório</label>
                         <textarea class="form-control" id="trumbowyg-editor" name="texto" style="font-weight: normal !important; width:100%; ">
                         </textarea>
                     </div>

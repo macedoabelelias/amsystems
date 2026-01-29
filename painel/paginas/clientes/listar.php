@@ -156,18 +156,18 @@ if($linhas2 > 0){
 
 	<big><a class="btn btn-primary-light btn-sm" href="#" onclick="mostrar('{$nome}','{$telefone}','{$endereco}','{$data_nascF}','{$tipo_sanguineo}','{$nome_responsavel}','{$nome_convenio}', '{$sexo}','{$obs}','{$idade}','{$id}','{$id}','{$profissao}','{$estado_civil}')" title="Mostrar Dados" title="Mostrar Dados"><i class="fa fa-info-circle "></i></a></big>
 
-		<big><a class="btn btn-primary-light btn-sm " href="#" onclick="anamnese('{$id}', '{$nome}')" title="Editar Anamnese"><i class="fa fa-stethoscope "></i></a></big>
+		<big><a class="btn btn-primary-light btn-sm " href="#" onclick="anamnese('{$id}', '{$nome}')" title="Editar Anamnese"><i class="fa fa-heartbeat "></i></a></big>
 
 		<big><a class="btn btn-dark-light btn-sm " href="#" onclick="consultas('{$id}', '{$nome}')" title="Últimas Consultas"><i class="fa fa-stethoscope "></i></a></big>
 
 
-				<big><a class="btn btn-dark-light btn-sm " href="#" onclick="odontograma('{$id}', '{$nome}', '{$id_odo}', '{$descricao_odo}','{$evolutivo_odo}')" title="Editar Odontograma"><i class="fa fa-file-o"></i></a></big>
+				<big><a class="btn btn-dark-light btn-sm " href="#" onclick="odontograma('{$id}', '{$nome}', '{$id_odo}', '{$descricao_odo}','{$evolutivo_odo}')" title="Editar Odontograma"><i class="fa fa-tooth"></i></a></big>
 
 
 
 <big><a class="btn btn-success-light btn-sm" href="#" onclick="mostrarContas('{$nome}','{$id}')" title="Mostrar Contas"><i style="color: green" class="fa fa-hand-holding-dollar"></i></a></big>
 
-		<big><a class="btn btn-dark-light btn-sm" href="#" onclick="arquivo('{$id}', '{$nome}')" title="Inserir / Ver Arquivos"><i class="fa fa-file-o taxt-secondary"></i></a></big>
+		<big><a class="btn btn-dark-light btn-sm" href="#" onclick="arquivo('{$id}', '{$nome}')" title="Inserir / Ver Arquivos"><i class="fa fa-archive taxt-secondary"></i></a></big>
 
 
 
@@ -177,7 +177,7 @@ if($linhas2 > 0){
 
 <form   method="POST" action="rel/prontuario_class.php" target="_blank" style="display:inline-block">
 					<input type="hidden" name="id" value="{$id}">
-					<big><button class="btn btn-info-light btn-sm" title="Prontuário"><i class="fa fa-file-pdf-o "></i></button></big>
+					<big><button class="btn btn-info-light btn-sm" title="Prontuário"><i class="fa fa-file-text "></i></button></big>
 					</form>
 
 
