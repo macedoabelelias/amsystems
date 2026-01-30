@@ -50,9 +50,9 @@ body {font-family: 'Tw Cen MT', sans-serif;}
 .marca{
 	position:fixed;
 	left:50;
-	top:100;
+	top:200;
 	width:80%;
-	opacity:8%;
+	opacity:5%;
 }
 </style>
 </head>
@@ -66,7 +66,7 @@ if($marca_dagua == 'Sim'){ ?>
 		<table style="width: 100%; border: 0px solid #ccc;">
 			<tr>
 				<td style="border: 1px; solid #000; width: 7%; text-align: left;">
-					<img style="margin-top: 7px; margin-left: 7px;" id="imag" src="<?php echo $url_sistema ?>img/logo.jpg" width="120px">
+					<img style="margin-top: 2px; margin-left: 7px;" id="imag" src="<?php echo $url_sistema ?>img/logo.jpg" width="130px">
 				</td>
 				<td style="width: 30%; text-align: left; font-size: 13px;">
 					
@@ -87,24 +87,24 @@ if($marca_dagua == 'Sim'){ ?>
 					<td colspan="4" style="width:100%; font-size: 10px"><b>DADOS DO PROFISSIONAL</b> </td>					
 				</tr>
 				<tr >
-					<td style="width:10%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">NOME: </td>
+					<td style="width:10%; border-bottom: : 1px solid #000;">NOME: </td>
 					<td style="width:40%; border-right: : 1px solid #000; border-bottom: : 1px solid #000;">
 						<?php echo mb_strtoupper($nome_tecnico) ?>
 					</td>
 					
-					<td style="width:10%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">CHAVE PIX: </td>
+					<td style="width:10%; border-bottom: : 1px solid #000;">CHAVE PIX: </td>
 					<td style="width:40%; border-bottom: : 1px solid #000;">
 						<?php echo $tipo_chave ?> <?php echo mb_strtoupper($pix_tecnico) ?>
 					</td>
     			</tr>
     			<tr >
-					<td style="width:10%; border-right: 1px solid #000;">TELEFONE: </td>
+					<td style="width:10%;">TELEFONE: </td>
 					<td style="width:40%; border-right: : 1px solid #000; ">
 						<?php echo mb_strtoupper($tel_tecnico) ?>
 					</td>
 					
-					<td style="width:10%; border-right: 1px solid #000;">EMAIL: </td>
-					<td style="width:40%; ">
+					<td style="width:10%;">EMAIL: </td>
+					<td style="width:40%; border-right: : 1px solid #000;">
 						<?php echo mb_strtoupper($email_tecnico) ?>
 					</td>
     			</tr>

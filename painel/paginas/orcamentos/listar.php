@@ -184,7 +184,7 @@ echo <<<HTML
 <big><a class="{$ocultar} btn btn-success btn-sm" href="#" onclick="baixarOrc('{$id}')" title="Aprovar Orçamento"><i class="fa fa-check-square "></i></a></big>
 
 
-		<big><a class="btn btn-secondary btn-sm" href="#" onclick="arquivo('{$id}', '{$nome_cliente}')" title="Inserir / Ver Arquivos"><i class="fa fa-file-o " ></i></a></big>
+		<big><a class="btn btn-secondary btn-sm" href="#" onclick="arquivo('{$id}', '{$nome_cliente}')" title="Inserir / Ver Arquivos"><i class="fa fa-archive " ></i></a></big>
 
 		
 
