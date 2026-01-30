@@ -10,9 +10,9 @@ $dataInicial = @$_POST['dataInicial'];
 
 $dataFinal = @$_POST['dataFinal'];
 
-$obs = urlencode(@$_POST['obs']);
+$obs = @$_POST['obs'];
 
-$motivo = urlencode(@$_POST['motivo']);
+$motivo = @$_POST['motivo'];
 
 
 

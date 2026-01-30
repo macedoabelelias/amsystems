@@ -12,7 +12,7 @@ $historico = @$_POST['historico'];
 
 $anamnese = @$_POST['anamnese'];
 $odontograma = @$_POST['odontograma'];
-
+$id_odontograma = @$_POST['odontograma'];
 
 if($id == ""){
 
