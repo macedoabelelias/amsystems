@@ -120,7 +120,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 				<td style="border: 1px; solid #000; width: 20%; text-align: left;">
 
-					<img style="margin-top: 2px; margin-left: 7px;" id="imag" src="<?php echo $url_sistema ?>img/logo.jpg" width="130px">
+					<img style="margin-top: 1px; margin-left: 7px; border-radius: 8px;" id="imag" src="<?php echo $url_sistema ?>img/logo.jpg" width="110px">
 
 				</td>
 

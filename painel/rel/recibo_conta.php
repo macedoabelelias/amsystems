@@ -138,7 +138,8 @@ if (@count($res) > 0) {
 
   <div class="receipt-main">
 
-    <img class="imagem" src="<?php echo $url_sistema ?>img/logo.jpg" style="margin: left 15px;">
+    <img class="imagem" src="<?php echo $url_sistema ?>img/logo.jpg" style="margin: left 15px; margin-bottom: 15px; border-radius:8px; width:18%;"
+      width="150px">
 
 
 
